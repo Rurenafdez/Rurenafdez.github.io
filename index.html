@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio sobre repostería." />
+    <meta name="keywords" content="portafolio, proyectos, repostería" />
+    <meta name="author" content="Rafael" />
+    <link
+      rel="icon"
+      href="https://th.bing.com/th/id/R.3c50d9acfc0ee4e3998fb4db7b77435d?rik=iDDXJj%2bxnxcogg&pid=ImgRaw&r=0"
+      type="image/png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Mi Portafolio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="https://th.bing.com/th/id/R.3c50d9acfc0ee4e3998fb4db7b77435d?rik=iDDXJj%2bxnxcogg&pid=ImgRaw&r=0"
+          alt="Logo"
+          width="30"
+          height="30"
+        />Dulces Creaciones</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#informacion">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recetas">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#contact"
+              data-toggle="modal"
+              data-target="#contactModal"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="enlaces.html">Enlaces de Interés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </li>
+        </ul>
+        <button id="toggle-dark-mode" class="btn btn-outline-secondary">
+          <i id="theme-icon" class="fas fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+
+    <header class="jumbotron text-center bg-primary text-white mb-0">
+      <h1 class="display-4">Bienvenido a Dulces Creaciones</h1>
+      <p class="lead">
+        Aquí encontrarás recetas e información sobre repostería.
+      </p>
+    </header>
+
+    <main id="inicio" class="container my-4">
+      <section id="informacion" class="mb-5">
+        <h2 class="text-center">Sobre nosotros</h2>
+        <p class="text-center">
+          En Repostería Deliciosa, nos especializamos en pasteles
+          personalizados, cupcakes y galletas. Cada uno de nuestros postres es
+          elaborado con amor y ingredientes de alta calidad, buscando endulzar
+          tus momentos especiales.
+        </p>
+      </section>
+
+      <section id="productos" class="mb-5">
+        <h2 class="text-center">Productos</h2>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/02/17/17/27/donuts-268390_1280.jpg"
+                class="d-block w-100"
+                alt="Donas"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/02/17/15/25/bun-268237_1280.jpg"
+                class="d-block w-100"
+                alt="Cupcakes"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/05/27/12/10/cake-786473_1280.jpg"
+                class="d-block w-100"
+                alt="Pastel"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/08/09/13/35/apple-pie-3594535_1280.jpg"
+                class="card-img-top"
+                alt="Pie de manzana"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pie de manzana</h5>
+                <p class="card-text">
+                  Delicioso postre con manzanas especiadas y canela en una masa
+                  crujiente. ¡Un clásico irresistible!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/12/14/17/37/his-grandmother-4695401_1280.jpg"
+                class="card-img-top"
+                alt="Pan dulce"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan dulce</h5>
+                <p class="card-text">
+                  Suave y esponjoso, ideal para el desayuno o con café. ¡Un
+                  placer en cada bocado!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/12/04/21/13/cakes-3856622_1280.jpg"
+                class="card-img-top"
+                alt="Galletas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Galletas</h5>
+                <p class="card-text">
+                  Crujientes por fuera y suaves por dentro. Perfectas para
+                  cualquier momento dulce.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recetas" class="mb-5">
+        <h2 class="text-center">Productos</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <img
+              src="https://cdn.pixabay.com/photo/2023/06/22/22/29/cookies-8082386_1280.jpg"
+              class="img-fluid rounded recipe-image"
+              alt="Galletas"
+              data-recipe-title="Galletas con Chips de Chocolate"
+              data-recipe-ingredients="<ul><li>1 taza de mantequilla sin sal (a temperatura ambiente)</li><li>1 taza de azúcar blanca</li><li>1 taza de azúcar morena</li><li>2 huevos grandes</li><li>2 cucharaditas de extracto de vainilla</li><li>3 tazas de harina para todo uso</li><li>1 cucharadita de bicarbonato de sodio</li><li>1/2 cucharadita de sal</li><li>2 tazas de chips de chocolate</li></ul>"
+              data-recipe-instructions="<ol><li>Precalienta el horno a 175 °C (350 °F) y prepara una bandeja con papel para hornear.</li><li>En un bol, bate la mantequilla y los azúcares hasta que esté suave y cremosa.</li><li>Agrega los huevos y la vainilla, y bate bien.</li><li>Añade la harina, el bicarbonato y la sal. Mezcla hasta que esté homogéneo.</li><li>Incorpora los chips de chocolate.</li><li>Coloca cucharadas de la mezcla en la bandeja y hornea de 10 a 12 minutos o hasta que estén doradas.</li></ol>"
+            />
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/01/28/10/02/ferrero-rocher-cake-3960005_1280.jpg"
+              class="img-fluid rounded recipe-image"
+              alt="Pasteles"
+              data-recipe-title="Pastel de Chocolate con Almendras Molidas"
+              data-recipe-ingredients="<ul><li>1 1/2 tazas de harina de trigo</li><li>1 taza de azúcar</li><li>1 taza de cacao en polvo</li><li>1 taza de almendras molidas</li><li>1 cucharadita de polvo de hornear</li><li>1/2 taza de mantequilla derretida</li><li>2 huevos</li><li>1 taza de leche</li></ul>"
+              data-recipe-instructions="<ol><li>Precalienta el horno a 180 °C (350 °F).</li><li>En un tazón, mezcla los ingredientes secos.</li><li>Añade la mantequilla, huevos, y leche, y mezcla bien.</li><li>Vierte la mezcla en un molde engrasado.</li><li>Hornea durante 30-35 minutos o hasta que un palillo salga limpio.</li><li>Deja enfriar y cubre con almendras molidas.</li></ol>"
+            />
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <img
+              src="https://cdn.pixabay.com/photo/2015/03/11/12/42/chocolate-brownies-668624_1280.jpg"
+              class="img-fluid rounded recipe-image"
+              alt="Brownies"
+              data-recipe-title="Brownies de Chocolate"
+              data-recipe-ingredients="<ul><li>1/2 taza de mantequilla</li><li>1 taza de azúcar</li><li>2 huevos</li><li>1/3 taza de cacao en polvo</li><li>1/2 taza de harina</li><li>1/4 cucharadita de sal</li><li>1/4 cucharadita de polvo de hornear</li></ul>"
+              data-recipe-instructions="<ol><li>Precalienta el horno a 175 °C (350 °F).</li><li>Derrite la mantequilla y mezcla con el azúcar y huevos.</li><li>Añade el cacao, harina, sal y polvo de hornear. Mezcla bien.</li><li>Vierte en un molde y hornea por 20-25 minutos.</li><li>Deja enfriar antes de cortar.</li></ol>"
+            />
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/07/29/09/46/cupcakes-5447570_1280.jpg"
+              class="img-fluid rounded recipe-image"
+              alt="Cupcakes"
+              data-recipe-title="Cupcakes de Chocolate con Suspiro"
+              data-recipe-ingredients="<ul><li>1 1/2 tazas de harina</li><li>1 taza de azúcar</li><li>1/2 taza de cacao en polvo</li><li>1 cucharadita de polvo de hornear</li><li>1/2 taza de leche</li><li>2 huevos</li><li>1/2 taza de mantequilla derretida</li></ul>"
+              data-recipe-instructions="<ol><li>Precalienta el horno a 180 °C (350 °F).</li><li>Mezcla harina, azúcar, cacao y polvo de hornear.</li><li>Añade la leche, huevos y mantequilla. Mezcla bien.</li><li>Vierte la mezcla en moldes para cupcakes y hornea por 20 minutos.</li><li>Cubre con suspiro.</li></ol>"
+            />
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/01/06/17/18/caramel-1958358_1280.jpg"
+              class="img-fluid rounded recipe-image"
+              alt="Flan"
+              data-recipe-title="Flan con Moras"
+              data-recipe-ingredients="<ul><li>1 lata de leche condensada</li><li>1 lata de leche evaporada</li><li>4 huevos</li><li>1 taza de azúcar</li><li>Moras frescas para decorar</li></ul>"
+              data-recipe-instructions="<ol><li>Precalienta el horno a 175 °C (350 °F).</li><li>Derrite el azúcar en una sartén hasta hacer caramelo. Vierte en el molde.</li><li>Licúa las leches con los huevos y vierte sobre el caramelo.</li><li>Hornea en baño maría por 1 hora.</li><li>Deja enfriar y decora con moras.</li></ol>"
+            />
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/08/17/03/42/mango-6551859_1280.jpg"
+              class="img-fluid rounded recipe-image"
+              alt="Gelatina de Mango"
+              data-recipe-title="Gelatina de Mango estilo Pudin"
+              data-recipe-ingredients="<ul><li>2 mangos maduros</li><li>1 taza de agua</li><li>1 taza de leche condensada</li><li>1 paquete de gelatina sin sabor</li></ul>"
+              data-recipe-instructions="<ol><li>Licúa los mangos con el agua y la leche condensada.</li><li>Disuelve la gelatina en agua caliente y mézclala con el mango.</li><li>Vierte en moldes individuales y refrigera por 4 horas.</li></ol>"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="modal fade"
+        id="recipeModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="recipeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="recipeModalLabel">Receta</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Cerrar"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5 id="recipeTitle"></h5>
+              <p><strong>Ingredientes:</strong></p>
+              <div id="recipeIngredients"></div>
+              <p><strong>Instrucciones:</strong></p>
+              <div id="recipeInstructions"></div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="contactModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contáctame</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="contactForm" onsubmit="sendEmail(event)">
+                <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo Electrónico</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensaje</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center bg-dark py-4">
+      <p>© 2024 Mi Portafolio. Conéctate conmigo en:</p>
+      <a
+        href="https://www.facebook.com/"
+        class="fab fa-facebook fa-2x mx-2"
+      ></a>
+      <a href="https://www.twitter.com/" class="fab fa-twitter fa-2x mx-2"></a>
+      <a href="https://www.instagram.com/" class="mx-2"
+        ><i class="fab fa-instagram fa-2x"></i
+      ></a>
+
+      <p class="mt-3" data-toggle="modal" data-target="#privacyModal">
+        Políticas de privacidad
+      </p>
+
+      <div
+        class="modal fade"
+        id="privacyModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="privacyModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="privacyModalLabel">
+                Políticas de Privacidad
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Cerrar"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="privacy-text">
+                <p><strong>1. Compartir Información</strong></p>
+                <p>
+                  No vendemos ni compartimos tu información personal con
+                  terceros, excepto con proveedores de servicios necesarios para
+                  operar nuestro sitio.
+                </p>
+
+                <p><strong>2. Seguridad</strong></p>
+                <p>
+                  Implementamos medidas de seguridad para proteger tu
+                  información, aunque ninguna transmisión de datos puede
+                  garantizarse como 100% segura.
+                </p>
+
+                <p><strong>3. Cambios</strong></p>
+                <p>
+                  Podemos actualizar esta política y te notificaremos sobre
+                  cualquier cambio publicando la nueva versión en esta página.
+                </p>
+
+                <p><strong>4. Contacto</strong></p>
+                <p>
+                  Si tienes alguna pregunta o inquietud sobre nuestra política
+                  de privacidad, no dudes en contactarnos.
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

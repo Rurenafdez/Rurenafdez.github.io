@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio sobre repostería." />
+    <meta name="keywords" content="portafolio, proyectos, repostería" />
+    <meta name="author" content="Rafael" />
+    <title>Enlaces de Interés</title>
+    <link
+      rel="icon"
+      href="https://th.bing.com/th/id/R.3c50d9acfc0ee4e3998fb4db7b77435d?rik=iDDXJj%2bxnxcogg&pid=ImgRaw&r=0"
+      type="image/png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="https://th.bing.com/th/id/R.3c50d9acfc0ee4e3998fb4db7b77435d?rik=iDDXJj%2bxnxcogg&pid=ImgRaw&r=0"
+          alt="Logo"
+          width="30"
+          height="30"
+        />Dulces Creaciones</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#informacion">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#recetas">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#contact"
+              data-toggle="modal"
+              data-target="#contactModal"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="enlaces.html">Enlaces de Interés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </li>
+        </ul>
+        <button id="toggle-dark-mode" class="btn btn-outline-secondary">
+          <i id="theme-icon" class="fas fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container text-center">
+      <h1>Enlaces de Interés</h1>
+
+      <div class="mb-4">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/8CSuRM-Dzjs?si=pGYbk-lwYmzLCChl"
+          title="Video 1"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="mb-4">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/0zGxza7LCEY?si=iPvchLzTq-K-KRmN"
+          title="Video 2"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="mb-4">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.159236054284!2d3.053365111268493!3d50.64273377151117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32a7edd67a9cd%3A0xf3d4751a0fa34f19!2sRue%20Royale%2C%2059800%20Lille%2C%20Francia!5e0!3m2!1ses!2sdo!4v1730791051991!5m2!1ses!2sdo"
+          height="450"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contáctame</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm" onsubmit="sendEmail(event)">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center bg-dark py-4">
+      <p>© 2024 Mi Portafolio. Conéctate conmigo en:</p>
+      <a
+        href="https://www.facebook.com/"
+        class="fab fa-facebook fa-2x mx-2"
+      ></a>
+      <a href="https://www.twitter.com/" class="fab fa-twitter fa-2x mx-2"></a>
+      <a href="https://www.instagram.com/" class="mx-2"
+        ><i class="fab fa-instagram fa-2x"></i
+      ></a>
+
+      <p class="mt-3" data-toggle="modal" data-target="#privacyModal">
+        Políticas de privacidad
+      </p>
+
+      <div
+        class="modal fade"
+        id="privacyModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="privacyModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="privacyModalLabel">
+                Políticas de Privacidad
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Cerrar"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="privacy-text">
+                <p><strong>1. Compartir Información</strong></p>
+                <p>
+                  No vendemos ni compartimos tu información personal con
+                  terceros, excepto con proveedores de servicios necesarios para
+                  operar nuestro sitio.
+                </p>
+
+                <p><strong>2. Seguridad</strong></p>
+                <p>
+                  Implementamos medidas de seguridad para proteger tu
+                  información, aunque ninguna transmisión de datos puede
+                  garantizarse como 100% segura.
+                </p>
+
+                <p><strong>3. Cambios</strong></p>
+                <p>
+                  Podemos actualizar esta política y te notificaremos sobre
+                  cualquier cambio publicando la nueva versión en esta página.
+                </p>
+
+                <p><strong>4. Contacto</strong></p>
+                <p>
+                  Si tienes alguna pregunta o inquietud sobre nuestra política
+                  de privacidad, no dudes en contactarnos.
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.jumbotron {
+    background-color: #007bff;
+    color: white;
+}
+
+.flex-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    transition: transform 0.2s;
+}
+
+.flex-item:hover {
+    transform: scale(1.05);
+    background-color: #f8f9fa;
+}
+
+.dark-mode {
+    background-color: #343a40;
+    color: white;
+}
+
+.footer {
+    background-color: #f8f9fa;
+}
+
+a {
+    color: black; 
+    text-decoration: none;  
+    font-weight: bold; 
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007bff;  
+    text-decoration: underline;  
+}
+
+.recipe-image {
+    transition: transform 0.3s ease;
+}
+
+.recipe-image:hover {
+    transform: scale(1.05);
+}
+
+footer p{
+    color: black;
+    cursor: pointer;
+  }
+
+footer p:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+ 
+.nav-link {
+    color: black; 
+    }
+
+.nav-link:hover {
+    color: black; 
+    text-decoration: underline;}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: black;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+
+.embed-responsive-item {
+    width: 100%;
+    height: 400px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
